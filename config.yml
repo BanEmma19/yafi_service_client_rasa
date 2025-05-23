@@ -1,0 +1,28 @@
+version: "3.1"
+
+language: "fr"
+
+pipeline:
+- name: SpacyNLP
+  model: "fr_core_news_md"    # Assure-toi d'avoir installé ce modèle avec: python -m spacy download fr_core_news_md
+- name: SpacyTokenizer
+- name: SpacyFeaturizer
+- name: RegexFeaturizer
+- name: LexicalSyntacticFeaturizer
+- name: CountVectorsFeaturizer
+  OOV_token: "[UNK]"
+  token_pattern: "(?u)\\b\\w+\\b"
+- name: CountVectorsFeaturizer
+  analyzer: "char_wb"
+  min_ngram: 1
+  max_ngram: 4
+- name: DIETClassifier
+  epochs: 100
+  random_seed: 42
+  constrain_similarities: true
+- name: FallbackClassifier
+  threshold: 0.3
+  ambiguity_threshold: 0.1
+
+policies: []
+assistant_id: 20250514-135821-sad-major

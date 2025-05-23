@@ -1,0 +1,16 @@
+# Environnement virtuel
+venv/
+.env
+
+# Cache Python
+__pycache__/
+*.py[cod]
+
+# Fichiers Rasa inutiles
+*.db
+*.lock
+*.json
+*.log
+
+# Jupyter notebooks checkpoints (si tu en as)
+.ipynb_checkpoints/

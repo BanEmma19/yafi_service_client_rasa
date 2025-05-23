@@ -1,0 +1,21 @@
+version: "3.1"
+intents:
+  - salutation
+  - remerciement
+  - aurevoir
+  - passer_commande
+  - suivi_commande
+  - annulation_commande
+  - problème_paiement
+  - délai_livraison
+  - contacter_livreur
+  - devenir_partenaire
+  - remboursement
+  - commande_mauvais_etat
+  - double_facturation
+  - compte_suspendu
+  - commande_non_livree
+  - mode_paiement
+  - disponibilité_service
+  - donner_email
+responses: {}

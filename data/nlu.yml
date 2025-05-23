@@ -1,0 +1,254 @@
+version: "3.1"
+
+nlu:
+
+- intent: salutation
+  examples: |
+    - Bonjour
+    - bonjour
+    - salut
+    - Salut
+    - coucou
+    - Coucou
+    - Hello
+    - hey
+    - Hey
+    - yo
+    - hé
+    - bjr
+    - slt
+    - y a quelqu'un ?
+    - quelqu'un là ?
+    - Allô
+    - allo
+    - hi
+
+- intent: remerciement
+  examples: |
+    - Merci
+    - merci beaucoup
+    - grand merci
+    - Je vous remercie
+    - Merci bien
+    - c'est gentil
+    - thx
+    - thanks
+    - merciiii
+    - Mercii
+    - mercie
+    - merci infiniment
+    - mille mercis
+    - cool, merci
+
+- intent: aurevoir
+  examples: |
+    - Au revoir
+    - À bientôt
+    - bye
+    - bye bye
+    - ciao
+    - a+
+    - à plus
+    - on se parle plus tard
+    - bonne journée
+    - à la prochaine
+    - salut !
+    - tchao
+    - bonne soirée
+
+- intent: passer_commande
+  examples: |
+    - Je veux commander
+    - commander maintenant
+    - je passe une commande
+    - j'aimerais acheter
+    - je souhaite commander
+    - je veux acheter quelque chose
+    - faire une commande
+    - je commande
+    - passer une commande svp
+    - comment je commande ?
+    - je veux passer commande
+
+- intent: suivi_commande
+  examples: |
+    - Où est ma commande ?
+    - je veux savoir où elle est
+    - statut de la commande
+    - elle est où ?
+    - Je veux suivre ma commande
+    - suivre mon colis
+    - il en est où mon colis ?
+    - c’est livré ?
+    - je n’ai rien reçu
+    - donne-moi le statut de ma commande
+    - je veux un suivi
+
+- intent: annulation_commande
+  examples: |
+    - J'aimerais annuler ma commande
+    - annulez svp
+    - je veux annuler
+    - annuler tout
+    - je veux faire une annulation
+    - comment annuler ?
+    - annulation de la commande
+    - annulez cette commande
+    - je change d'avis
+    - je veux plus
+
+- intent: problème_paiement
+  examples: |
+    - Mon paiement a échoué
+    - je n’arrive pas à payer
+    - carte ne passe pas
+    - pb de paiement
+    - ça bug au paiement
+    - erreur de paiement
+    - problème avec ma carte
+    - refusé au paiement
+    - ça ne marche pas
+    - je peux pas payer
+
+- intent: délai_livraison
+  examples: |
+    - c’est long la livraison
+    - pourquoi je ne suis pas encore livré ?
+    - j’attends ma commande
+    - livraison lente
+    - ça prend combien de temps ?
+    - en retard ?
+    - j’attends toujours ma commande
+    - toujours rien
+    - long délai
+    - quand ça arrive ?
+
+- intent: contacter_livreur
+  examples: |
+    - je veux parler au livreur
+    - comment joindre le livreur ?
+    - contacter la personne qui livre
+    - appeler le livreur
+    - il est où le livreur ?
+    - numéro du livreur ?
+    - je veux contacter celui qui livre
+    - je dois parler au livreur
+    - joindre le livreur
+    - me mettre en contact avec le livreur
+
+- intent: devenir_partenaire
+  examples: |
+    - je veux devenir partenaire
+    - proposer mes services
+    - partenariat
+    - devenir partenaire
+    - bosser avec vous
+    - je veux travailler avec vous
+    - je veux m’associer
+    - je veux collaborer
+    - on peut faire un partenariat ?
+    - je veux proposer mes services
+
+- intent: remboursement
+  examples: |
+    - je veux être remboursé
+    - remboursement svp
+    - je demande un remboursement
+    - remboursé comment ?
+    - Remboursement s’il vous plaît
+    - argent retour
+    - je veux mon argent
+    - reprendre l’argent
+    - récupérer l’argent
+    - me faire rembourser
+
+- intent: commande_mauvais_etat
+  examples: |
+    - Ma commande est abîmée
+    - C’est arrivé en mauvais état
+    - Le produit est cassé
+    - abîmé
+    - emballage déchiré
+    - produit défectueux
+    - reçu cassé
+    - tout est écrasé
+    - mauvais état
+    - article abîmé
+
+- intent: double_facturation
+  examples: |
+    - j’ai été facturé deux fois
+    - paiement en double
+    - double débit
+    - j’ai payé deux fois
+    - doublon facture
+    - facturé deux fois
+    - erreur de facturation
+    - argent pris deux fois
+    - double paiement
+    - débité deux fois
+
+- intent: compte_suspendu
+  examples: |
+    - Mon compte est bloqué
+    - je ne peux plus me connecter
+    - Mon compte est suspendu
+    - compte inaccessible
+    - problème de connexion
+    - je suis banni ?
+    - je suis bloqué
+    - je n’ai plus accès à mon compte
+    - mon accès est coupé
+    - compte désactivé
+
+- intent: commande_non_livree
+  examples: |
+    - Ma commande n’est jamais arrivée
+    - toujours rien reçu
+    - je n’ai pas été livré
+    - elle est perdue ?
+    - rien reçu
+    - non livrée
+    - j’attends encore
+    - ma commande est perdue ?
+    - je ne vois rien arriver
+    - où est la livraison ?
+
+- intent: mode_paiement
+  examples: |
+    - Quels sont les moyens de paiement ?
+    - vous acceptez quoi comme carte ?
+    - comment payer ?
+    - modes de paiement disponibles ?
+    - on peut payer avec PayPal ?
+    - j’aimerais savoir les moyens de paiement
+    - vous prenez les chèques ?
+    - c’est quoi vos moyens de paiement ?
+    - carte ou espèce ?
+    - quels paiements possibles ?
+
+- intent: disponibilité_service
+  examples: |
+    - Êtes-vous disponible aujourd’hui ?
+    - Le service est ouvert ?
+    - c’est quand vos horaires ?
+    - vous êtes ouverts ?
+    - à quelle heure on peut vous joindre ?
+    - quels sont vos horaires ?
+    - je peux commander maintenant ?
+    - c’est ouvert ?
+    - je peux passer commande là ?
+    - vos heures d'ouverture ?
+
+- intent: donner_email
+  examples: |
+    - Mon email est contact@exemple.com
+    - voici mon adresse email
+    - je vous donne mon email
+    - mon mail c’est truc@bidule.fr
+    - c’est email@gmail.com
+    - adresse : nom@mail.com
+    - je vous envoie mon adresse mail
+    - mon e-mail est toto@toto.fr
+    - mail = x@y.z
+    - je vous laisse mon mail
