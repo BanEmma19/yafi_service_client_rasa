@@ -164,7 +164,6 @@ nlu:
 
 - intent: commande_mauvais_etat
   examples: |
-    - Ma commande est abîmée
     - C’est arrivé en mauvais état
     - Le produit est cassé
     - abîmé
@@ -252,3 +251,10 @@ nlu:
     - mon e-mail est toto@toto.fr
     - mail = x@y.z
     - je vous laisse mon mail
+    
+- intent:
+  examples: |
+    - asdfghjkl
+    - question aléatoire
+    - contenu incompréhensible
+

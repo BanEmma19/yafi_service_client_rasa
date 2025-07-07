@@ -18,4 +18,5 @@ intents:
   - mode_paiement
   - disponibilité_service
   - donner_email
+  - nlu_fallback
 responses: {}

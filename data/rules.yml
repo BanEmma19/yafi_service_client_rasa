@@ -1,0 +1,4 @@
+- rule: Gérer le fallback
+  steps:
+    - intent: nlu_fallback
+    - action: action_keyword_similarity_fallback
